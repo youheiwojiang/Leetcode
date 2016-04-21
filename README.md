@@ -1,6 +1,9 @@
 #Solutions for Leetcode
 
 Some tips in the java programming:
+  
+-----------------------------------------------------------------------------------	
+
 
   PriorityQueue in java: if the element is your own object not primitive you should give an comparator to do this
   
@@ -19,3 +22,11 @@ Some tips in the java programming:
         });
   	
   	```
+ -----------------------------------------------------------------------------------	
+  	
+  Bit shift :
+  always remember << >> >>> your target is on the left,
+  
+  a<<b means a*2^b
+  
+  a<<1 means a*2
