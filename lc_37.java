@@ -21,6 +21,7 @@
                 }
             }
         }
+        return true;//for the satisfying condition
     }
     public boolean isValid(char[][]board,int i, int j ,char c){
          for(int row = 0; row < 9; row++)
