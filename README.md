@@ -2,9 +2,9 @@
 
 Some tips in the java programming:
   
------------------------------------------------------------------------------------	
+-----------------------------------------------------------------------------------
 
-
+    Trapping water problems(only considering the shorter end of the wall)	
   PriorityQueue in java: if the element is your own object not primitive you should give an comparator to do this
   
   + both are generics:<Object>
