@@ -3,6 +3,14 @@
 Some tips in the java programming:
   
 -----------------------------------------------------------------------------------
+	remember subarray means contiguous / subsequence only maintain the order
+    DP is good for subarray 
+-----------------------------------------------------------------------------------
+
+	Remember convert between Chararray and String use String.valueOf() not use toString
+
+
+----------------------------------------------------------------------------------
 
     Trapping water problems(only considering the shorter end of the wall)	
   PriorityQueue in java: if the element is your own object not primitive you should give an comparator to do this
