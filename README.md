@@ -1,6 +1,8 @@
 #Solutions for Leetcode
 
 Some tips in the java programming:
+
+We can use Collections.sort(List,Comparator) to sort list
   
 -----------------------------------------------------------------------------------
 	remember subarray means contiguous / subsequence only maintain the order
@@ -28,6 +30,18 @@ Some tips in the java programming:
                return A.val - B.val;
            }  
         });
+        
+        
+     //another implementation
+        class mycomp implements Comparator<Interval>{
+            public int compare(Interval a, Interval b){
+                if(a.start == b.start)
+                    return a.end -b.end;
+                else
+                    return a.start -b.start;
+            }
+        }
+        Collections.sort(intervals, new mycomp());
   	
   	```
  -----------------------------------------------------------------------------------	
