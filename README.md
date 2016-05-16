@@ -60,7 +60,34 @@ We can use Collections.sort(List,Comparator) to sort list
   	- while ( l < r ) 
   	    - the following is focus on the find first satisfying problem
   		- not handling the 1 length array need detect A[l] == target
-  		- return the mid or l or r;
+  		- return the mid or l or r;(no ! return don't need satisfying l =r )
+  		- key is to define mid and (l and r which stays the same(l = mid))
+  			- for example find the first good 
+  				
+  				```
+  				 while(l < r){
+  				 	mid = l + (r -l)/2;
+  				 	if(f(mid))
+  				 		r = mid;
+  				 	else
+  				 		l = mid + 1 
+  				 }
+  				  return l // r  
+  				```
+  			- find the last good is different
+  				
+  				```
+  					while(l < r){
+  						mid = r -(r-l)/2; // it's the trick
+  						if((mid))
+  							l = mid;
+  						else
+  							r = mid -1;
+  					
+  					}
+  					return l//r
+  				``` 
+  			
   		- can use l = mid + 1 and r = mid(won't cause TLE)
   	- while ( l <= r)
   		- used to find the first element satisfying some f(i)
