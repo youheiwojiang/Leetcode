@@ -4,6 +4,22 @@ Some tips in the java programming:
 
 We can use Collections.sort(List,Comparator) to sort list
   
+  Reverse Linked List(given length reverse part of the linkedlist)
+  
+  ```
+  		ListNode start = pre.next;
+        ListNode then = start.next;
+        //key part of reversing given length linkedlist
+        for(int i = 0; i< n-m;i++){
+            start.next = then.next;
+            then.next = pre.next;
+            pre.next = then;
+            then = start.next;
+        }
+  
+  ```
+  
+  
 -----------------------------------------------------------------------------------
 	remember subarray means contiguous / subsequence only maintain the order
     DP is good for subarray 
