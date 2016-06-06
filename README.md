@@ -2,6 +2,9 @@
 
 Some tips in the java programming:
 
+Any method with String parameter and void type , the original string won't get changed, since any change to the String will cause a new String and repoint.
+
+
 We can use Collections.sort(List,Comparator) to sort list
   
   Reverse Linked List(given length reverse part of the linkedlist)
@@ -87,7 +90,7 @@ We can use Collections.sort(List,Comparator) to sort list
   			- for example find the first good 
   				
   				```
-  				 while(l < r){
+  				 while(l < r){ // this implies there must exit(if not need to check the last one)
   				 	mid = l + (r -l)/2;
   				 	if(f(mid))
   				 		r = mid;
