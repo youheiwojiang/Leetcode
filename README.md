@@ -51,7 +51,7 @@ We can use Collections.sort(List,Comparator) to sort list
         });
         
      // a more concise code:
-        Comparator<Interval>comp = new Comparator<ListNode>(){
+        Comparator<ListNode>comp = new Comparator<ListNode>(){
           public int compare(ListNode A, ListNode B){
                return A.val - B.val;
            }  
@@ -65,7 +65,7 @@ We can use Collections.sort(List,Comparator) to sort list
                 else
                     return a.start -b.start;
             }
-        }
+        };
         Collections.sort(intervals, new mycomp());
   	
   	```
